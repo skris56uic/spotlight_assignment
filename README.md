@@ -73,6 +73,13 @@ The generated HTML file includes:
 - Pixel-perfect positioning and spacing
 - Accurate colors, gradients, and typography
 
+## Limitations
+
+- **Static HTML Output**: The converter generates static HTML/CSS. Interactive elements like buttons and input fields are rendered as `<div>` and `<span>` elements with visual styling only. They are not functional form elements.
+- **No JavaScript**: No interactivity or event handlers are included in the output.
+- **Single Frame**: Currently converts only the first top-level frame in the Figma file.
+- **Visual Fidelity Focus**: The tool prioritizes pixel-perfect visual reproduction over functional interactivity.
+
 ## Notes
 
 - The converter currently supports the first top-level frame in the Figma file
