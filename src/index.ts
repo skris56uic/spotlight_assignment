@@ -61,7 +61,7 @@ async function main() {
             fs.mkdirSync(outputDir, { recursive: true });
         }
 
-        const outputPath = path.join(outputDir, `${rootFrame.name.replace(/[^a-zA-Z0-9]/g, '-')}.html`);
+        const outputPath = path.join(outputDir, 'Frame.html');
         fs.writeFileSync(outputPath, html);
 
         console.log(`Conversion complete! Saved to ${outputPath}`);
